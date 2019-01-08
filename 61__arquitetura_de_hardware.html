@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.1 - Arquitetura de Hardware </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Seguinte",show:"Mostrar",hide:"Esconder",showFeedback:"Mostrar feedback",hideFeedback:"Ocultar resposta",correct:"Correto",incorrect:"Incorreto",menu:"Menu",download:"Descarregar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-69"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegação</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Informática para o Trabalho</a></li>
+   <li><a href="1__placa_me.html" class="daddy">1 - Placa mãe</a>
+   <ul class="other-section">
+      <li><a href="11__onboard_e_offboard.html" class="no-ch">1.1 - On-Board e Off-Board</a></li>
+      <li><a href="12__histria_do_usb.html" class="no-ch">1.2 - História do USB</a></li>
+      <li><a href="13__histria_do_mouse.html" class="no-ch">1.3 - História do mouse</a></li>
+      <li><a href="14__teclado.html" class="no-ch">1.4 - Teclado</a></li>
+      <li><a href="15__monitor.html" class="no-ch">1.5 - Monitor</a></li>
+      <li><a href="16__bios.html" class="no-ch">1.6 - BIOS</a></li>
+      <li><a href="17__memoria.html" class="daddy">1.7 - Memoria</a>
+      <ul class="other-section">
+         <li><a href="171__memria_ram.html" class="no-ch">1.7.1 - Memória RAM</a></li>
+         <li><a href="172__memria_rom.html" class="no-ch">1.7.2 - Memória ROM</a></li>
+      </ul>
+      </li>
+      <li><a href="18__processador_ou_cpu.html" class="no-ch">1.8 - Processador ou CPU</a></li>
+      <li><a href="19__fonte.html" class="no-ch">1.9 - Fonte</a></li>
+   </ul>
+   </li>
+   <li><a href="2__inicializao.html" class="daddy">2 - Inicialização</a>
+   <ul class="other-section">
+      <li><a href="21__boot.html" class="no-ch">2.1 - BOOT</a></li>
+      <li><a href="22__setup.html" class="no-ch">2.2 - SETUP</a></li>
+      <li><a href="23__teste.html" class="no-ch">2.3 - Teste</a></li>
+      <li><a href="24__modo_de_segurana.html" class="no-ch">2.4 - Modo de Segurança</a></li>
+      <li><a href="25__recuperar_o_boot.html" class="no-ch">2.5 - Recuperar o Boot</a></li>
+   </ul>
+   </li>
+   <li><a href="3__outros_componentes.html" class="daddy">3 - Outros Componentes</a>
+   <ul class="other-section">
+      <li><a href="31__hard_disk.html" class="no-ch">3.1 - Hard Disk</a></li>
+      <li><a href="32__hard_disk_ssd.html" class="no-ch">3.2 - Hard Disk SSD</a></li>
+      <li><a href="33__bluetooth.html" class="no-ch">3.3 - Bluetooth</a></li>
+      <li><a href="34__hdmi.html" class="no-ch">3.4 - HDMI</a></li>
+   </ul>
+   </li>
+   <li><a href="4__sistemas_operacionais.html" class="daddy">4 - Sistemas Operacionais</a>
+   <ul class="other-section">
+      <li><a href="41__windows.html" class="no-ch">4.1 - Windows</a></li>
+      <li><a href="42__linux.html" class="no-ch">4.2 - Linux</a></li>
+      <li><a href="43__mac_osx.html" class="no-ch">4.3 - Mac Osx</a></li>
+   </ul>
+   </li>
+   <li><a href="5__processamento_de_dados.html" class="daddy">5 - Processamento de Dados</a>
+   <ul class="other-section">
+      <li><a href="51__o_que__dado.html" class="no-ch">5.1 - O que é Dado</a></li>
+      <li><a href="52__o_que__informao.html" class="no-ch">5.2 - O que é Informação</a></li>
+      <li><a href="53__o_que__conhecimento.html" class="no-ch">5.3 - O que é Conhecimento</a></li>
+      <li><a href="54__o_que__sabedoria.html" class="no-ch">5.4 - O que é Sabedoria</a></li>
+      <li><a href="55__pirmide_do_conhecimento.html" class="no-ch">5.5 - Pirâmide do Conhecimento</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6__arquiteturas.html" class="current-page-parent daddy">6 - Arquiteturas</a>
+   <ul>
+      <li id="active"><a href="61__arquitetura_de_hardware.html" class="active no-ch">6.1 - Arquitetura de Hardware</a></li>
+      <li><a href="62__arquitetura_de_software.html" class="no-ch">6.2 - Arquitetura de Software</a></li>
+      <li><a href="63__arquiteturas_x86_e_x64.html" class="no-ch">6.3 - Arquiteturas x86 e x64</a></li>
+   </ul>
+   </li>
+   <li><a href="7__rede_de_computadores.html" class="daddy">7 - Rede de Computadores</a>
+   <ul class="other-section">
+      <li><a href="71__modem.html" class="no-ch">7.1 - MODEM</a></li>
+      <li><a href="72__redes_neurais.html" class="no-ch">7.2 - Redes Neurais</a></li>
+   </ul>
+   </li>
+   <li><a href="8__iterao_homem_computador.html" class="daddy">8 - Iteração Homem Computador</a>
+   <ul class="other-section">
+      <li><a href="81__ergonomia.html" class="no-ch">8.1 - Ergonomia</a></li>
+      <li><a href="82__engenharia_cognitiva_e_semitica.html" class="no-ch">8.2 - Engenharia Cognitiva e Semiótica</a></li>
+   </ul>
+   </li>
+   <li><a href="9__formatao_os.html" class="daddy">9 - Formatação OS</a>
+   <ul class="other-section">
+      <li><a href="91__windows_format_e_configurao.html" class="no-ch">9.1 - Windows: Format e Configuração</a></li>
+      <li><a href="92__linux_instalao_ubuntu.html" class="no-ch">9.2 - Linux: Instalação Ubuntu</a></li>
+      <li><a href="93__mac_os_x_instalao.html" class="no-ch">9.3 - Mac OS x: Instalação</a></li>
+   </ul>
+   </li>
+   <li><a href="10__criar_pendrive_de_boot.html" class="daddy">10 - Criar Pendrive de Boot</a>
+   <ul class="other-section">
+      <li><a href="101_ccleaner_bootavel.html" class="no-ch">10.1 CCleaner Bootavel</a></li>
+   </ul>
+   </li>
+   <li><a href="11__excel_bsico.html" class="daddy">11 - Excel básico</a>
+   <ul class="other-section">
+      <li><a href="111__aula_1_excel_2013_bsico.html" class="no-ch">11.1 - Aula 1 Excel 2013 básico</a></li>
+      <li><a href="112__aula_2_excel_2013_bsico.html" class="no-ch">11.2 - Aula 2 Excel 2013 básico</a></li>
+   </ul>
+   </li>
+   <li><a href="12__tica_no_trabalho.html" class="daddy">12 - Ética no trabalho</a>
+   <ul class="other-section">
+      <li><a href="121__o_que__tica.html" class="no-ch">12.1 - O que é Ética</a></li>
+      <li><a href="122__o_que__moral.html" class="no-ch">12.2 - O que é moral</a></li>
+      <li><a href="123__o_que__antietico.html" class="no-ch">12.3 - O que é antietico</a></li>
+      <li><a href="124__tica_profissional.html" class="no-ch">12.4 - Ética profissional</a></li>
+   </ul>
+   </li>
+   <li><a href="13__empreendedorismo_na_informtica.html" class="daddy">13 - Empreendedorismo na informática</a>
+   <ul class="other-section">
+      <li><a href="131__4_caminhos_para_empreender_ti.html" class="no-ch">13.1 - 4 Caminhos para empreender T.I</a></li>
+      <li><a href="132__empreendedor_tem_que_est_atualizado.html" class="no-ch">13.2 - Empreendedor tem que está atualizado</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6__arquiteturas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="62__arquitetura_de_software.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.1 - Arquitetura de Hardware</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id79">
+<div class="iDevice emphasis0">
+<div id="ta79_85" class="block iDevice_content">
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" align="left" style="text-align: justify;"><span id="sites-page-title" dir="ltr" tabindex="-1">Arquitetura de Hardware</span></h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox">
+<tbody>
+<tr>
+<td class="sites-layout-tile sites-tile-name-content-1">
+<div dir="ltr">
+<p style="text-align: justify;">          Mesmo que a tecnologia utilizada nos computadores digitais tenha mudado dramaticamente desde os primeiros computadores da<span> </span><a href="http://pt.wikipedia.org/wiki/D%C3%A9cada_de_1940" title="Década de 1940" rel="nofollow">década de 1940</a><span> </span>(veja<span> </span><a href="http://pt.wikipedia.org/wiki/Hist%C3%B3ria_do_hardware" title="História do hardware" rel="nofollow">história do hardware</a>), quase todos os computadores atuais ainda utilizam a<span> </span><a href="http://pt.wikipedia.org/wiki/Arquitetura_de_von_Neumann" title="Arquitetura de von Neumann" rel="nofollow">arquitetura de von Neumann</a><span> </span>proposta por<span> </span><a href="http://pt.wikipedia.org/wiki/John_von_Neumann" title="John von Neumann" rel="nofollow">John von Neumann</a>.</p>
+<p style="text-align: justify;">          Seguindo a arquitetura, os computadores possuem quatro sessões principais, a<span> </span><a href="http://pt.wikipedia.org/wiki/Unidade_l%C3%B3gica_e_aritm%C3%A9tica" title="Unidade lógica e aritmética" rel="nofollow">unidade lógica e aritmética</a>, a<span> </span><a href="http://pt.wikipedia.org/wiki/Unidade_de_controle" title="Unidade de controle" rel="nofollow">unidade de controle</a>, a<span> </span><a href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_%28computador%29" title="Memória (computador)" rel="nofollow">memória</a><span> </span>e os dispositivos de<span> </span><a href="http://pt.wikipedia.org/wiki/Dispositivo_de_entrada" title="Dispositivo de entrada" rel="nofollow">entrada</a><span> </span>e<span> </span><a href="http://pt.wikipedia.org/wiki/Dispositivo_de_sa%C3%ADda" title="Dispositivo de saída" rel="nofollow">saída</a>. Essas partes são interconectadas por barramentos. A unidade lógica e aritmética, a unidade de controle, os<span> </span><a href="http://pt.wikipedia.org/wiki/Registrador_%28inform%C3%A1tica%29" title="Registrador (informática)" rel="nofollow">registradores</a><span> </span>e a parte básica de entrada e saída são conhecidos como a<span> </span><a href="http://pt.wikipedia.org/wiki/CPU" title="CPU" rel="nofollow">CPU</a>.</p>
+<p style="text-align: justify;">          Alguns computadores maiores diferem do modelo acima em um aspecto principal - eles têm múltiplas CPUs trabalhando simultaneamente. Adicionalmente, poucos computadores, utilizados principalmente para pesquisa e computação científica, têm diferenças significativas do modelo acima, mas eles não tem grande aplicação comercial.</p>
+<br />
+<p style="text-align: justify;"><b><span size="3" style="font-size: medium;">Processamento</span></b></p>
+<p style="text-align: justify;">          O processador (ou<span> </span><a href="http://pt.wikipedia.org/wiki/CPU" title="CPU" rel="nofollow">CPU</a>) é uma das partes principais do<span> </span><a href="http://pt.wikipedia.org/wiki/Hardware" title="Hardware" rel="nofollow">hardware</a><span> </span>do computador e é responsável pelos cálculos, execução de tarefas e processamento de dados. A velocidade com que o computador executa as tarefas ou processa dados está diretamente ligada à velocidade do processador. As primeiras CPUs eram constituídas de vários componentes separados, mas desde meados da<span> </span><a href="http://pt.wikipedia.org/wiki/D%C3%A9cada_de_1970" title="Década de 1970" rel="nofollow">década de 1970</a><span> </span>as CPUs vêm sendo manufaturadas em um único<span> </span><a href="http://pt.wikipedia.org/wiki/Circuito_integrado" title="Circuito integrado" rel="nofollow">circuito integrado</a>, sendo então chamadas<span> </span><a href="http://pt.wikipedia.org/wiki/Microprocessador" title="Microprocessador" rel="nofollow">microprocessadores</a>.</p>
+<p style="text-align: justify;">          A<span> </span><a href="http://pt.wikipedia.org/wiki/Unidade_l%C3%B3gica_e_aritm%C3%A9tica" title="Unidade lógica e aritmética" rel="nofollow">unidade lógica e aritmética</a><span> </span>(ULA) é a unidade central do processador, que realmente executa as operações aritméticas e lógicas entre dois números. Seus parâmetros incluem, além dos números operandos, um resultado, um comando da unidade de controle, e o estado do comando após a operação. O conjunto de operações aritméticas de uma ULA pode ser limitado a adição e subtração, mas também pode incluir multiplicação, divisão, funções trigonométricas e raízes quadradas. Algumas podem operar somente com números inteiros, enquanto outras suportam o uso de ponto flutuante para representar números reais (apesar de possuirem precisão limitada).</p>
+<p style="text-align: justify;">          A<span> </span><a href="http://pt.wikipedia.org/wiki/Unidade_de_controle" title="Unidade de controle" rel="nofollow">unidade de controle</a><span> </span>é a unidade do processador que armazena a posição de memória que contém a instrução corrente que o computador está executando, informando à ULA qual operação a executar, buscando a informação (da memória) que a ULA precisa para executá-la e transferindo o resultado de volta para o local apropriado da memória. Feito isto, a unidade de controle vai para a próxima instrução (tipicamente localizada na próxima<span> </span><a href="http://pt.wikipedia.org/wiki/Endere%C3%A7o_de_mem%C3%B3ria" title="Endereço de memória" rel="nofollow">posição da memória</a>, a menos que a instrução seja uma instrução de desvio informando que a próxima instrução está em outra posição.</p>
+<p style="text-align: justify;">          A CPU também contém um conjunto restrito de células de memória chamados<span> </span><a href="http://pt.wikipedia.org/wiki/Registrador_%28inform%C3%A1tica%29" title="Registrador (informática)" rel="nofollow">registradores</a><span> </span>que podem ser lidos e escritos muito mais rapidamente que em outros dispositivos de memória. São usados frequentemente para evitar o acesso contínuo à memória principal cada vez que um dado é requisitado.</p>
+<br />
+<div style="text-align: justify;">
+<div><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/558px-Personal_computer%2C_exploded.svg.png?attredirects=0" imageanchor="1"><img border="0" height="420" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228171453411/arquitetura-de-hardware/558px-Personal_computer%2C_exploded.svg.png?height=420&amp;width=390" width="390" /></a></div>
+</div>
+<div style="text-align: justify;">LEGENDA:<span> </span><b>01-</b><span> </span>Monitor<span> </span><b>02-</b><span> </span>Placa-Mãe<span> </span><b>03-</b><span> </span>Processador<span> </span><b>04-</b><span> </span>Memória RAM<span> </span><b>05-</b><span> </span>Placas de Rede, Som, Vídeo, Fax...<span> </span><b>06-</b>Fonte de Energia<span> </span><b>07-</b><span> </span>Leitor de CDs e/ou DVDs<span> </span><b>08-</b><span> </span>Disco Rígido (HD)<span> </span><b>09-</b><span> </span>Mouse (ou Rato)<span> </span><b>10-</b><span> </span>Teclado<br /><br /><br /><br />
+<div><b><span size="3" style="font-size: medium;">Memória</span></b><br /><br />          A<span> </span><a href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_de_computador" title="Memória de computador" rel="nofollow">memória</a><span> </span>é um dispositivo que permite ao computador armazenar dados por certo tempo. Atualmente o termo é geralmente usado para definir as memórias voláteis, como a<span> </span><a href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_RAM" title="Memória RAM" rel="nofollow">RAM</a>, mas seu conceito primordial também aborda memórias não voláteis, como o<span> </span><a href="http://pt.wikipedia.org/wiki/Disco_r%C3%ADgido" title="Disco rígido" rel="nofollow">disco rígido</a>. Parte da memória do computador é feita no próprio processador; o resto é diluído em componentes como a<span> </span><a href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_RAM" title="Memória RAM" rel="nofollow">memória RAM</a>,<span> </span><a href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_cache" title="Memória cache" rel="nofollow">memória cache</a>,<span> </span><a href="http://pt.wikipedia.org/wiki/Disco_r%C3%ADgido" title="Disco rígido" rel="nofollow">disco rígido</a><span> </span>e<span> </span><a href="http://pt.wikipedia.org/wiki/Leitor_de_CD" title="Leitor de CD" rel="nofollow">leitores de mídias removíveis</a>, como<span> </span><a href="http://pt.wikipedia.org/wiki/Disquete" title="Disquete" rel="nofollow">disquete</a>,<span> </span><a href="http://pt.wikipedia.org/wiki/CD" title="CD" rel="nofollow">CD</a><span> </span>e<span> </span><a href="http://pt.wikipedia.org/wiki/DVD" title="DVD" rel="nofollow">DVD</a>.
+<p>          Nos computadores modernos, cada<span> </span><a href="http://pt.wikipedia.org/wiki/Endere%C3%A7o_de_mem%C3%B3ria" title="Endereço de memória" rel="nofollow">posição da memória</a><span> </span>é configurado para armazenar grupos de oito<span> </span><a href="http://pt.wikipedia.org/wiki/Bit" title="Bit" rel="nofollow">bits</a>(chamado de um<span> </span><a href="http://pt.wikipedia.org/wiki/Byte" title="Byte" rel="nofollow">byte</a>). Cada byte consegue representar 256 números diferentes; de 0 a 255 ou de -128 a +127. Para armazenar números maiores pode-se usar diversos bytes consecutivos (geralmente dois, quatro ou oito). Quando números negativos são armazenados, é utilizada a notação de<span> </span><a href="http://pt.wikipedia.org/wiki/Complemento_para_dois" title="Complemento para dois" rel="nofollow">complemento para dois</a>.</p>
+<p>          A memória do computador é normalmente dividida entre primária e secundária, sendo possível também falar de uma memória "terciária".</p>
+<p></p>
+<p><b><span size="3" style="font-size: medium;"><span>Memória primária</span></span></b></p>
+<p>          A memória primária é aquela acessada diretamente pela Unidade Lógica e Aritmética. Tradicionalmente essa memória pode ser de leitura e escrita (RAM) ou só de leitura (ROM). Atualmente existem memórias que podem ser classificadas como<span> </span><i>preferencialmente de leitura</i>, isso é, variações da memória ROM que podem ser regravadas, porém com um número limitado de ciclos e um tempo muito mais alto.</p>
+<p>          Normalmente a memória primária se comunica com a ULA por meio de um<span> </span><a href="http://pt.wikipedia.org/wiki/Barramento" title="Barramento" rel="nofollow">barramento</a><span> </span>ou canal de dados. A velocidade de acesso a memória é um fator importante de custo de um computador, por isso a memória primária é normalmente construída de forma hierárquica em um projeto de computador. Parte da memória, conhecida como<span> </span><a href="http://pt.wikipedia.org/wiki/Cache" title="Cache" rel="nofollow">cache</a>fica muito próxima à ULA, com acesso muito rápido. A maior parte da memória é acessada por meio de vias auxiliares.</p>
+<p>          Normalmente a memória é nitidamente separada da ULA em uma arquitetura de computador. Porém, os<span> </span><a href="http://pt.wikipedia.org/wiki/Microprocessador" title="Microprocessador" rel="nofollow">microprocessadores</a><span> </span>atuais possuem<span> </span><a href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_cache" title="Memória cache" rel="nofollow">memória cache</a><span> </span>incorporada, o que aumenta em muito sua velocidade.</p>
+<br />
+<p></p>
+<div>
+<div><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/motherboard-busses.jpg?attredirects=0" imageanchor="1"><img border="0" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228172211145/arquitetura-de-hardware/motherboard-busses.jpg" /></a></div>
+</div>
+<br />
+<p><span size="3" style="font-size: medium;"><b>Memória RAM</b></span></p>
+          A<span> </span><b>memória RAM</b><span> </span>(<i>Random Access Memory</i>) é uma sequência de células numeradas, cada uma contendo uma pequena quantidade de informação. A informação pode ser uma<span> </span><a href="http://pt.wikipedia.org/wiki/Instru%C3%A7%C3%A3o" title="Instrução" rel="nofollow">instrução</a><span> </span>para dizer ao computador o que fazer. As células podem conter também<span> </span><a href="http://pt.wikipedia.org/wiki/Dados" title="Dados" rel="nofollow">dados</a><span> </span>que o computador precisa para realizar uma instrução. Qualquer célula pode conter instrução ou dado, assim o que em algum momento armazenava dados pode armazenar instruções em outro momento. Em geral, o conteúdo de uma célula de memória pode ser alterado a qualquer momento, a memória RAM é um rascunho e não um bloco de pedra.
+<p>          As memórias RAM são denominadas genericamente de DRAM (RAM dinâmica), pelo fato de possuírem uma característica chamada<span> </span><i>refrescamento de memória</i>, que tem a finalidade de manter os dados armazenados enquanto o computador estiver ligado. O tamanho de cada célula, e o número de células, varia de computador para computador, e as tecnologias utilizadas para implementar a memória RAM variam bastante. Atualmente o mais comum é a implementação em circuitos integrados.</p>
+<p></p>
+<div>
+<div><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/800px-SODIMM_64MB_SDRAM.JPG?attredirects=0" imageanchor="1"><img border="0" height="263" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228172323709/arquitetura-de-hardware/800px-SODIMM_64MB_SDRAM.JPG?height=263&amp;width=420" width="420" /></a></div>
+</div>
+<div>Memória RAM de um PC</div>
+</div>
+</div>
+<br />
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"><span size="3" style="font-size: medium;"><b>Memória ROM</b></span></p>
+<p style="text-align: justify;">          A<span> </span><b>memória ROM</b><span> </span>(<i>Read-Only Memory</i>) é uma memória que só pode ser lida e os dados não são perdidos com o desligamento do computador. A diferença entre a memória RAM e a ROM é que a RAM aceita gravação, regravação e perda de dados. Mesmo se for enviada uma informação para ser gravada na memória ROM, o procedimento não é executado (esta característica praticamente elimina a criação de<span> </span><a href="http://pt.wikipedia.org/wiki/V%C3%ADrus_inform%C3%A1tico" title="Vírus informático" rel="nofollow">vírus</a><span> </span>que afetam a ROM).</p>
+<p style="text-align: justify;">          Um<span> </span><a href="http://pt.wikipedia.org/wiki/Software" title="Software" rel="nofollow">software</a><span> </span>gravado na ROM recebe o nome de<span> </span><i><a href="http://pt.wikipedia.org/wiki/Firmware" title="Firmware" rel="nofollow">firmware</a></i>. Em computadores da linha IBM-PC eles são basicamente três, que são acessados toda vez que ligamos o computador, a saber:<span> </span><a href="http://pt.wikipedia.org/wiki/BIOS" title="BIOS" rel="nofollow">BIOS</a>,<span> </span><a href="http://pt.wikipedia.org/wiki/POST" title="POST" rel="nofollow">POST</a><span> </span>e<span> </span><a href="http://pt.wikipedia.org/wiki/SETUP" title="SETUP" rel="nofollow">SETUP</a>.</p>
+<p style="text-align: justify;">          Existe uma variação da ROM chamada memória preferencialmente de leitura que permite a re-gravação de dados. São as chamadas<span> </span><a href="http://pt.wikipedia.org/wiki/EPROM" title="EPROM" rel="nofollow">EPROM</a><span> </span>(<i>Erasable Programmable Read Only Memory</i>) ou<span> </span><a href="http://pt.wikipedia.org/wiki/EEPROM" title="EEPROM" rel="nofollow">EEPROM</a><span> </span>(<i>Electrically Erasable Programmable Read-Only Memory</i>).</p>
+<p style="text-align: justify;"></p>
+<div style="text-align: justify;">
+<div><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/ROM_BIOS.jpg?attredirects=0" imageanchor="1"><img border="0" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228172470041/arquitetura-de-hardware/ROM_BIOS.jpg" /></a></div>
+</div>
+Memória ROM de um PC<br />
+<p style="text-align: justify;"><span> </span></p>
+<p style="text-align: justify;"><span size="3" style="font-size: medium;"><b><span>Memória secundária</span></b></span></p>
+<p style="text-align: justify;">          A memória secundária ou<span> </span><b>memória de massa</b><span> </span>é usada para gravar grande quantidade de dados, que não são perdidos com o desligamento do computador, por um período longo de tempo. Exemplos de memória de massa incluem o<span> </span><a href="http://pt.wikipedia.org/wiki/Disco_r%C3%ADgido" title="Disco rígido" rel="nofollow">disco rígido</a><span> </span>e mídias removíveis como o<span> </span><a href="http://pt.wikipedia.org/wiki/CD-ROM" title="CD-ROM" rel="nofollow">CD-ROM</a>, o<span> </span><a href="http://pt.wikipedia.org/wiki/DVD" title="DVD" rel="nofollow">DVD</a>, o<span> </span><a href="http://pt.wikipedia.org/wiki/Disquete" title="Disquete" rel="nofollow">disquete</a><span> </span>e o<span> </span><a href="http://pt.wikipedia.org/wiki/Pen_drive" title="Pen drive" rel="nofollow">pen drive</a>.</p>
+<p style="text-align: justify;">          Normalmente a memória secundária não é acessada diretamente pela ULA, mas sim por meio dos dispositivos de entrada e saída. Isso faz com que o acesso a essa memória seja muito mais lento do que o acesso a memória primária. Para isso cada dispositivo encontra-se com um<span> </span><a href="http://pt.wikipedia.org/wiki/Buffer_%28Ci%C3%AAncia_da_computa%C3%A7%C3%A3o%29" title="Buffer (Ciência da computação)" rel="nofollow">buffer</a><span> </span>de escrita e leitura para melhoramento de desempenho.</p>
+<p style="text-align: justify;">          Supostamente, consideramos que a memória terciária está permanentemente ligada ao computador.</p>
+<br />
+<p style="text-align: justify;"><span size="3" style="font-size: medium;"><b>Memória Terciária</b></span></p>
+<p style="text-align: justify;">          Sistemas mais complexos de computação podem incluir um terceiro nível de memória, com acesso ainda mais lento que o da memória secundária. Um exemplo seria um sistema automatizado de fitas contendo a informação necessária. A memória terciária não é nada mais que um dispositivo de memória secundária ou memória de massa colocado para servir um dispositivo de memória secundária.</p>
+<p style="text-align: justify;">          As tecnologias de memória usam materiais e processos bastante variados. Na informática, elas têm evoluído sempre em direção de uma maior capacidade de armazenamento, maior miniaturização, maior rapidez de acesso e confiabilidade, enquanto seu custo cai constantemente.</p>
+<p style="text-align: justify;">          Entretanto, a memória de um computador não se limita a sua memoria individual e física, ela se apresenta de maneira mais ampla, e sem lugar definido (desterritorializada). Temos possibilidades de armazenar em diversos lugares na rede, podemos estar em<span> </span><a href="http://pt.wikipedia.org/wiki/Luanda" title="Luanda" rel="nofollow">Luanda</a><span> </span>e acessar arquivos que foram armazenados em sítios no<span> </span><a href="http://pt.wikipedia.org/wiki/Brasil" title="Brasil" rel="nofollow">Brasil</a>.</p>
+<p style="text-align: justify;">          É crescente a tendência para o armazenamento das informações na memória do espaço virtual, ou o chamado ciberespaço, através de<span> </span><a href="http://pt.wikipedia.org/wiki/Disco_virtual" title="Disco virtual" rel="nofollow">discos virtuais</a><span> </span>e anexos de<span> </span><a href="http://pt.wikipedia.org/wiki/E-mail" title="E-mail" rel="nofollow">e-mails</a>. Isto torna possível o acesso a informação a partir de qualquer dispositivo conectado à<span> </span><a href="http://pt.wikipedia.org/wiki/Internet" title="Internet" rel="nofollow">Internet</a>.</p>
+<p style="text-align: justify;"></p>
+<div style="text-align: justify;">
+<div><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/625px-Largetape.jpg?attredirects=0" imageanchor="1"><img border="0" height="402" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228172646859/arquitetura-de-hardware/625px-Largetape.jpg?height=402&amp;width=420" width="420" /></a></div>
+</div>
+<div style="text-align: justify;">Fita magnética para gravação de dados</div>
+<p style="text-align: justify;"><span size="3" style="font-size: medium;"><b>Entrada e Saída</b></span></p>
+<p style="text-align: justify;">          Os dispositivos de<span> </span><a href="http://pt.wikipedia.org/wiki/Dispositivo_de_entrada" title="Dispositivo de entrada" rel="nofollow">entrada</a><span> </span>e<span> </span><a href="http://pt.wikipedia.org/wiki/Dispositivo_de_sa%C3%ADda" title="Dispositivo de saída" rel="nofollow">saída</a><span> </span>(<a href="http://pt.wikipedia.org/wiki/E/S" title="E/S" rel="nofollow">E/S</a>) são<span> </span><a href="http://pt.wikipedia.org/wiki/Perif%C3%A9rico" title="Periférico" rel="nofollow">periféricos</a><span> </span>usados para a<span> </span><a href="http://pt.wikipedia.org/wiki/Intera%C3%A7%C3%A3o_homem-computador" title="Interação homem-computador" rel="nofollow">interação homem-computador</a>. Nos computadores pessoais modernos, dispositivos comuns de entrada incluem o<span> </span><a href="http://pt.wikipedia.org/wiki/Mouse" title="Mouse" rel="nofollow">mouse</a><span> </span>(ou rato), o<span> </span><a href="http://pt.wikipedia.org/wiki/Teclado_%28computador%29" title="Teclado (computador)" rel="nofollow">teclado</a>, o<span> </span><a href="http://pt.wikipedia.org/wiki/Digitalizador" title="Digitalizador" rel="nofollow">digitalizador</a><span> </span>e a<span> </span><a href="http://pt.wikipedia.org/wiki/Webcam" title="Webcam" rel="nofollow">webcam</a>.  Dispositivos comuns de saída incluem a<span> </span><a href="http://pt.wikipedia.org/wiki/Caixa_de_som" title="Caixa de som" rel="nofollow">caixa de som</a>, o<span> </span><a href="http://pt.wikipedia.org/wiki/Monitor" title="Monitor" rel="nofollow">monitor</a><sup><a href="http://pt.wikipedia.org/wiki/Computador#cite_note-2" title="" rel="nofollow">[3]</a></sup><span> </span>e a<span> </span><a href="http://pt.wikipedia.org/wiki/Impressora" title="Impressora" rel="nofollow">impressora</a>.</p>
+<p style="text-align: justify;">          O que todos os dispositivos de entrada têm em comum é que eles precisam codificar (converter) a informação de algum tipo em dados que podem ser processados pelo sistema digital do computador. Dispositivos de saída por outro lado, descodificam os dados em informação que é entendida pelo usuário do computador. Neste sentido, um sistema de computadores digital é um exemplo de um sistema de processamento de dados.</p>
+<p style="text-align: justify;">          Podemos ter dispositivos que funcionam tanto para entrada como para saída de dados, como o modem e o drive de disquete. Atualmente, outro dispositivo de híbrido de dados é a<span> </span><a href="http://pt.wikipedia.org/wiki/Rede_de_computadores" title="Rede de computadores" rel="nofollow">rede de computadores</a>.</p>
+<p style="text-align: justify;"></p>
+<div style="text-align: justify;">
+<div><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/5_Tastenmaus_Microsoft_IntelliMouse_Optical_Black.jpg?attredirects=0" imageanchor="1"><img border="0" height="150" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228173005426/arquitetura-de-hardware/5_Tastenmaus_Microsoft_IntelliMouse_Optical_Black.jpg?height=150&amp;width=200" width="200" /></a></div>
+</div>
+<div><br />
+<div><span size="3" style="font-size: medium;"><b>Barramentos</b></span><br /><br />          Para interligar todos esses dispositivos existe uma placa de suporte especial, a<span> </span><a href="http://pt.wikipedia.org/wiki/Placa-m%C3%A3e" title="Placa-mãe" rel="nofollow">placa-mãe</a>, que através de<span> </span><a href="http://pt.wikipedia.org/wiki/Barramento" title="Barramento" rel="nofollow">barramentos</a>, fios e<span> </span><a href="http://pt.wikipedia.org/wiki/Soquete" title="Soquete" rel="nofollow">soquetes</a><span> </span>conecta todos os dispositivos. Sua função inclui também a conexão de placas auxiliares que sub-controlam os periféricos de entrada e saída, como a placa de som (conecta-se com a caixa de som), a placa de vídeo (conecta-se com o monitor),<span> </span><a href="http://pt.wikipedia.org/wiki/Placa_de_rede" title="Placa de rede" rel="nofollow">placa de rede</a><span> </span>(conecta-se com a<span> </span><a href="http://pt.wikipedia.org/wiki/LAN" title="LAN" rel="nofollow">LAN</a>) e o<span> </span><a href="http://pt.wikipedia.org/wiki/Fax-modem" title="Fax-modem" rel="nofollow">fax-modem</a><span> </span>(conecta-se com a linha telefônica).
+<p style="text-align: justify;">          Nota-se que o barramento entre os componentes não constitui uma conexão ponto-a-ponto; ele pode conectar logicamente diversos componentes utilizando o mesmo conjunto de fios. O barramento pode utilizar uma<span> </span><a href="http://pt.wikipedia.org/wiki/Interface_serial" title="Interface serial" rel="nofollow">interface serial</a>ou uma<span> </span><a href="http://pt.wikipedia.org/wiki/Interface_paralela" title="Interface paralela" rel="nofollow">interface paralela</a>.</p>
+<p style="text-align: justify;">          Outros equipamentos adicionais usados em conjunto com a placa-mãe são o<span> </span><a href="http://pt.wikipedia.org/wiki/Dissipador" title="Dissipador" rel="nofollow">dissipador</a>, um pequeno ventilador para resfriar o processador, e a<span> </span><a href="http://pt.wikipedia.org/wiki/Fonte_de_energia" title="Fonte de energia" rel="nofollow">fonte de energia</a>, responsável pela alimentação de energia de todos os componentes do computador.</p>
+<p style="text-align: justify;"><b>Blocos funcionais de um computador:</b></p>
+<p style="text-align: justify;"></p>
+<div>
+<div style="text-align: justify;"><a href="https://sites.google.com/site/tecnologiaalegrete/arquitetura-de-hardware/Blocos-funcionais-computador.gif?attredirects=0" imageanchor="1">+*-/<img border="0" src="https://sites.google.com/site/tecnologiaalegrete/_/rsrc/1228173149213/arquitetura-de-hardware/Blocos-funcionais-computador.gif" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licença Creative Commons Atribuição Compartilha Igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6__arquiteturas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="62__arquitetura_de_software.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

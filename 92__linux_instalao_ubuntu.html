@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>9.2 - Linux: Instalação Ubuntu </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Seguinte",show:"Mostrar",hide:"Esconder",showFeedback:"Mostrar feedback",hideFeedback:"Ocultar resposta",correct:"Correto",incorrect:"Incorreto",menu:"Menu",download:"Descarregar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-81"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegação</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Informática para o Trabalho</a></li>
+   <li><a href="1__placa_me.html" class="daddy">1 - Placa mãe</a>
+   <ul class="other-section">
+      <li><a href="11__onboard_e_offboard.html" class="no-ch">1.1 - On-Board e Off-Board</a></li>
+      <li><a href="12__histria_do_usb.html" class="no-ch">1.2 - História do USB</a></li>
+      <li><a href="13__histria_do_mouse.html" class="no-ch">1.3 - História do mouse</a></li>
+      <li><a href="14__teclado.html" class="no-ch">1.4 - Teclado</a></li>
+      <li><a href="15__monitor.html" class="no-ch">1.5 - Monitor</a></li>
+      <li><a href="16__bios.html" class="no-ch">1.6 - BIOS</a></li>
+      <li><a href="17__memoria.html" class="daddy">1.7 - Memoria</a>
+      <ul class="other-section">
+         <li><a href="171__memria_ram.html" class="no-ch">1.7.1 - Memória RAM</a></li>
+         <li><a href="172__memria_rom.html" class="no-ch">1.7.2 - Memória ROM</a></li>
+      </ul>
+      </li>
+      <li><a href="18__processador_ou_cpu.html" class="no-ch">1.8 - Processador ou CPU</a></li>
+      <li><a href="19__fonte.html" class="no-ch">1.9 - Fonte</a></li>
+   </ul>
+   </li>
+   <li><a href="2__inicializao.html" class="daddy">2 - Inicialização</a>
+   <ul class="other-section">
+      <li><a href="21__boot.html" class="no-ch">2.1 - BOOT</a></li>
+      <li><a href="22__setup.html" class="no-ch">2.2 - SETUP</a></li>
+      <li><a href="23__teste.html" class="no-ch">2.3 - Teste</a></li>
+      <li><a href="24__modo_de_segurana.html" class="no-ch">2.4 - Modo de Segurança</a></li>
+      <li><a href="25__recuperar_o_boot.html" class="no-ch">2.5 - Recuperar o Boot</a></li>
+   </ul>
+   </li>
+   <li><a href="3__outros_componentes.html" class="daddy">3 - Outros Componentes</a>
+   <ul class="other-section">
+      <li><a href="31__hard_disk.html" class="no-ch">3.1 - Hard Disk</a></li>
+      <li><a href="32__hard_disk_ssd.html" class="no-ch">3.2 - Hard Disk SSD</a></li>
+      <li><a href="33__bluetooth.html" class="no-ch">3.3 - Bluetooth</a></li>
+      <li><a href="34__hdmi.html" class="no-ch">3.4 - HDMI</a></li>
+   </ul>
+   </li>
+   <li><a href="4__sistemas_operacionais.html" class="daddy">4 - Sistemas Operacionais</a>
+   <ul class="other-section">
+      <li><a href="41__windows.html" class="no-ch">4.1 - Windows</a></li>
+      <li><a href="42__linux.html" class="no-ch">4.2 - Linux</a></li>
+      <li><a href="43__mac_osx.html" class="no-ch">4.3 - Mac Osx</a></li>
+   </ul>
+   </li>
+   <li><a href="5__processamento_de_dados.html" class="daddy">5 - Processamento de Dados</a>
+   <ul class="other-section">
+      <li><a href="51__o_que__dado.html" class="no-ch">5.1 - O que é Dado</a></li>
+      <li><a href="52__o_que__informao.html" class="no-ch">5.2 - O que é Informação</a></li>
+      <li><a href="53__o_que__conhecimento.html" class="no-ch">5.3 - O que é Conhecimento</a></li>
+      <li><a href="54__o_que__sabedoria.html" class="no-ch">5.4 - O que é Sabedoria</a></li>
+      <li><a href="55__pirmide_do_conhecimento.html" class="no-ch">5.5 - Pirâmide do Conhecimento</a></li>
+   </ul>
+   </li>
+   <li><a href="6__arquiteturas.html" class="daddy">6 - Arquiteturas</a>
+   <ul class="other-section">
+      <li><a href="61__arquitetura_de_hardware.html" class="no-ch">6.1 - Arquitetura de Hardware</a></li>
+      <li><a href="62__arquitetura_de_software.html" class="no-ch">6.2 - Arquitetura de Software</a></li>
+      <li><a href="63__arquiteturas_x86_e_x64.html" class="no-ch">6.3 - Arquiteturas x86 e x64</a></li>
+   </ul>
+   </li>
+   <li><a href="7__rede_de_computadores.html" class="daddy">7 - Rede de Computadores</a>
+   <ul class="other-section">
+      <li><a href="71__modem.html" class="no-ch">7.1 - MODEM</a></li>
+      <li><a href="72__redes_neurais.html" class="no-ch">7.2 - Redes Neurais</a></li>
+   </ul>
+   </li>
+   <li><a href="8__iterao_homem_computador.html" class="daddy">8 - Iteração Homem Computador</a>
+   <ul class="other-section">
+      <li><a href="81__ergonomia.html" class="no-ch">8.1 - Ergonomia</a></li>
+      <li><a href="82__engenharia_cognitiva_e_semitica.html" class="no-ch">8.2 - Engenharia Cognitiva e Semiótica</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="9__formatao_os.html" class="current-page-parent daddy">9 - Formatação OS</a>
+   <ul>
+      <li><a href="91__windows_format_e_configurao.html" class="no-ch">9.1 - Windows: Format e Configuração</a></li>
+      <li id="active"><a href="92__linux_instalao_ubuntu.html" class="active no-ch">9.2 - Linux: Instalação Ubuntu</a></li>
+      <li><a href="93__mac_os_x_instalao.html" class="no-ch">9.3 - Mac OS x: Instalação</a></li>
+   </ul>
+   </li>
+   <li><a href="10__criar_pendrive_de_boot.html" class="daddy">10 - Criar Pendrive de Boot</a>
+   <ul class="other-section">
+      <li><a href="101_ccleaner_bootavel.html" class="no-ch">10.1 CCleaner Bootavel</a></li>
+   </ul>
+   </li>
+   <li><a href="11__excel_bsico.html" class="daddy">11 - Excel básico</a>
+   <ul class="other-section">
+      <li><a href="111__aula_1_excel_2013_bsico.html" class="no-ch">11.1 - Aula 1 Excel 2013 básico</a></li>
+      <li><a href="112__aula_2_excel_2013_bsico.html" class="no-ch">11.2 - Aula 2 Excel 2013 básico</a></li>
+   </ul>
+   </li>
+   <li><a href="12__tica_no_trabalho.html" class="daddy">12 - Ética no trabalho</a>
+   <ul class="other-section">
+      <li><a href="121__o_que__tica.html" class="no-ch">12.1 - O que é Ética</a></li>
+      <li><a href="122__o_que__moral.html" class="no-ch">12.2 - O que é moral</a></li>
+      <li><a href="123__o_que__antietico.html" class="no-ch">12.3 - O que é antietico</a></li>
+      <li><a href="124__tica_profissional.html" class="no-ch">12.4 - Ética profissional</a></li>
+   </ul>
+   </li>
+   <li><a href="13__empreendedorismo_na_informtica.html" class="daddy">13 - Empreendedorismo na informática</a>
+   <ul class="other-section">
+      <li><a href="131__4_caminhos_para_empreender_ti.html" class="no-ch">13.1 - 4 Caminhos para empreender T.I</a></li>
+      <li><a href="132__empreendedor_tem_que_est_atualizado.html" class="no-ch">13.2 - Empreendedor tem que está atualizado</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="91__windows_format_e_configurao.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="93__mac_os_x_instalao.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">9.2 - Linux: Instalação Ubuntu</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id92">
+<div class="iDevice emphasis0">
+<div id="ta92_85" class="block iDevice_content">
+<h1 class="materia-titulo ">Como instalar o Ubuntu</h1>
+<div class="materia-assinatura-letra">
+<div class="share-bar snippet share-bar-container share-theme-natural" data-title="Como instalar o Ubuntu" data-url="http://glo.bo/1PzQW1v">
+<div class="share-button share-pinterest share-small"></div>
+</div>
+</div>
+<article class="materia-conteudo">
+<div class="corpo-conteudo">
+<div class="publicidade banner_artigo1 publicidade-banner_artigo1 wrapper-widget">
+<div class="tag-manager-publicidade-container" id="banner_artigo1"></div>
+</div>
+<p><span>Ubuntu, distribuição do Linux mais popular do mundo, oferece a melhor interface para o usuário, tornando fácil a vida de quem migra do Windows ou iOS. Além disso, tem por trás uma organização como a Canonical, que se preocupa em moderar a comunidade e liberar atualizações constantes. </span></p>
+<p>Utopic Unicorn: Canonical celebra 10 anos</p>
+<p>Se você cansou do sistema da Microsoft, da Apple ou simplesmente quer apoiar uma alternativa de código aberto, o Ubuntu é uma ótima escolha. Veja como instalar no seu computador.</p>
+<div id="5b59aa17-7903-0015-e851-f8d3dc933d9e" class="foto componente-conteudo"><img src="http://s2.glbimg.com/hSpFTO4ZXw4RQ-tTZl3WvV0oqxk=/0x0:694x313/695x313/s.glbimg.com/po/tt2/f/original/2015/08/17/ubuntu-logo14.png" alt="Ubuntu, distribuição do Linux (Foto: Divulgação/Ubuntu)" title="Ubuntu, distribuição do Linux (Foto: Divulgação/Ubuntu)" width="695" height="313" /></div>
+<div class="foto componente-conteudo"><strong>Ubuntu, distribuição do Linux (Foto: Divulgação/Ubuntu)</strong></div>
+<p></p>
+<p>Passo 1. Baixe a imagem do<span> </span>Ubuntu<span> </span>no formato ISO, de acordo com a arquitetura do seu hardware, 32 ou 64 bits;</p>
+<p>Passo 2. Baixe o<span> </span>Universal USB Installer. Você irá precisar dele para criar o pendrive bootável com a imagem do<span> </span><span class="semantica-autolink-topico-tip">Ubuntu</span>. Em seguida, conecte um pendrive com, no mínimo, 2 GB livres no computador;</p>
+<p>Passo 3. Abra o programa e escolha “Ubuntu” na primeira lista de seleção;</p>
+<div id="a47d1d76-19f5-2d61-0cd2-fab80e968d6e" class="foto componente-conteudo"><img src="http://s2.glbimg.com/eV1EkVvaoBoB1aneb6iAlHqa8hw=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/selecione-ubuntu.png" alt="Selecione Ubuntu (Foto: Reprodução/Paulo Alves)" height="388" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Selecione Ubuntu (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 4. Importe o arquivo ISO baixado no Passo 1;</p>
+<div id="dd47a56a-4c6c-8bea-2f92-833a4c0258f6" class="foto componente-conteudo"><img src="http://s2.glbimg.com/x4mZPAq7HfKxPPHLAGP1VuJhLBA=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/importe-o-arquivo-iso.png" alt="Importe o arquivo ISO do Ubuntu (Foto: Reprodução/Paulo Alves)" height="388" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Importe o arquivo ISO do Ubuntu (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 5. Habilite a detecção dos seus drives de disco e selecione o pendrive;</p>
+<div id="929d05ef-0f08-a712-b9de-bf5a07cee329" class="foto componente-conteudo"><img src="http://s2.glbimg.com/a3qmVmnroGH2-W5S_giUi72oyrs=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/selecione-o-pendrive.png" alt="Selecione o pendrive (Foto: Reprodução/Paulo Alves)" height="388" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Selecione o pendrive (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 6. Formate o pendrive caso ele não tenha espaço suficiente e clique em “Create”;</p>
+<div id="d3c38e48-0d32-7ea1-72cf-11c873864c78" class="foto componente-conteudo"><img src="http://s2.glbimg.com/5qHGcQTGBySCFfP0xZYH_nZ22-A=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/formate-o-pendrive-e-crie-o-disco.png" alt="Formate o pendrive e crie o disco bootável (Foto: Reprodução/Paulo Alves)" height="388" width="695" /></div>
+<div class="foto componente-conteudo"><strong></strong></div>
+<div class="foto componente-conteudo"><strong>Formate o pendrive e crie o disco bootável (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 7. Confirme o início do procedimento na próxima tela;</p>
+<div id="cb5884d9-a32f-1cbe-7a89-24c612ca58ea" class="foto componente-conteudo"><img src="http://s2.glbimg.com/RWlYYZrXCAsyh2hoxA9rhYSz7w4=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/confirme-sua-escolha.png" alt="Confirme sua escolha (Foto: Reprodução/Paulo Alves)" height="308" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Confirme sua escolha (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 8. Em seguida, acesse a BIOS do seu computador para<span> </span>habilitar o boot pelo USB. Caso seu computador seja um ultrabook, talvez seja preciso realizar um procedimento diferente;</p>
+<p>Download grátis do app do TechTudo: receba dicas e notícias de tecnologia no Android ou iPhone</p>
+<p>Passo 9. Na tela de configuração do<span> </span><span class="semantica-autolink-topico-tip">Ubuntu</span>, escolha Português do Brasil no menu lateral e clique em “Instalar o Ubuntu”;</p>
+<div id="35b73718-4b17-9d0a-4af4-180cb1c7d41f" class="foto componente-conteudo"><img src="http://s2.glbimg.com/ywtDQG0obw_YQE--IrkL5aMRVbI=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/selecione-o-idioma-e-instale-o-ubuntu-direto-no-disco-rigido-do-computador.png" alt="Selecione o idioma e instale o Ubuntu direto no disco rígido do computador (Foto: Reprodução/Paulo Alves)" height="440" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Selecione o idioma e instale o Ubuntu direto no disco rígido do computador (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 10. Opte por obter atualizações marcando a caixa de diálogo e prossiga;</p>
+<div id="d03a8f47-33cb-eaa5-ff25-0073e99c0927" class="foto componente-conteudo"><img src="http://s2.glbimg.com/t8oEGqsYj24TrA39UcDdXF1lSIE=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/confirme-o-download-de-atualizacoes.png" alt="Confirme o download de atualizações (Foto: Reprodução/Paulo Alves)" height="390" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Confirme o download de atualizações (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 11. Formate seu disco e instale o Ubuntu – esse passo irá apagar todos os dados do seu computador, inclusive o sistema operacional;</p>
+<div id="d9072d86-6f49-d3e4-8295-145104bb2ff1" class="foto componente-conteudo"><img src="http://s2.glbimg.com/oyhP75vwE3NXr3cfCGVQxViL2iE=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/formate-o-disco-e-comece-a-instalar.png" alt="Formate o disco e comece a instalar (Foto: Reprodução/Paulo Alves)" height="379" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Formate o disco e comece a instalar (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 12. Selecione sua cidade;</p>
+<div id="80db4d4a-953f-7055-ab95-96edd70a4bd1" class="foto componente-conteudo"><img src="http://s2.glbimg.com/rueU_NzqUNIHz-Ua0rPeekvKIq0=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/selecione-sua-cidade.png" alt="Selecione sua cidade (Foto: Reprodução/Paulo Alves)" height="377" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Selecione sua cidade (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 13. Configure o teclado para português brasileiro;</p>
+<div id="f4f7e0fd-1e1a-4912-5a04-d9d21cff6b7f" class="foto componente-conteudo"><img src="http://s2.glbimg.com/_GnizK-9VwzEAtgGQpuAEOZT0K4=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/configure-o-teclado-para-portugues.png" alt="Configure o teclado para português (Foto: Reprodução/Paulo Alves)" height="378" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Configure o teclado para português (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>Passo 14. Insira seu nome, um nome para o computador e uma senha para realizar login.</p>
+<div id="f28c9dba-e4a6-ceb8-61f7-db017b61c5ee" class="foto componente-conteudo"><img src="http://s2.glbimg.com/ViCWenwYBDHpKMdo_m_QrBvwI4Q=/695x0/s.glbimg.com/po/tt2/f/original/2016/01/25/escolha-nomes-e-senha.png" alt="Escolha nomes e senha (Foto: Reprodução/Paulo Alves)" height="378" width="695" /></div>
+<div class="foto componente-conteudo"><strong>Escolha nomes e senha (Foto: Reprodução/Paulo Alves)</strong></div>
+<p>A partir daí, basta esperar para que o assistente conclua a instalação do Ubuntu e você possa aproveitar todos os recursos dessa avançada distribuição do Linux.</p>
+</div>
+</article>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licença Creative Commons Atribuição Compartilha Igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="91__windows_format_e_configurao.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="93__mac_os_x_instalao.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

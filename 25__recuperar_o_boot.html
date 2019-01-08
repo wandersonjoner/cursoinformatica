@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.5 - Recuperar o Boot </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Seguinte",show:"Mostrar",hide:"Esconder",showFeedback:"Mostrar feedback",hideFeedback:"Ocultar resposta",correct:"Correto",incorrect:"Incorreto",menu:"Menu",download:"Descarregar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-49"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegação</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Informática para o Trabalho</a></li>
+   <li><a href="1__placa_me.html" class="daddy">1 - Placa mãe</a>
+   <ul class="other-section">
+      <li><a href="11__onboard_e_offboard.html" class="no-ch">1.1 - On-Board e Off-Board</a></li>
+      <li><a href="12__histria_do_usb.html" class="no-ch">1.2 - História do USB</a></li>
+      <li><a href="13__histria_do_mouse.html" class="no-ch">1.3 - História do mouse</a></li>
+      <li><a href="14__teclado.html" class="no-ch">1.4 - Teclado</a></li>
+      <li><a href="15__monitor.html" class="no-ch">1.5 - Monitor</a></li>
+      <li><a href="16__bios.html" class="no-ch">1.6 - BIOS</a></li>
+      <li><a href="17__memoria.html" class="daddy">1.7 - Memoria</a>
+      <ul class="other-section">
+         <li><a href="171__memria_ram.html" class="no-ch">1.7.1 - Memória RAM</a></li>
+         <li><a href="172__memria_rom.html" class="no-ch">1.7.2 - Memória ROM</a></li>
+      </ul>
+      </li>
+      <li><a href="18__processador_ou_cpu.html" class="no-ch">1.8 - Processador ou CPU</a></li>
+      <li><a href="19__fonte.html" class="no-ch">1.9 - Fonte</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2__inicializao.html" class="current-page-parent daddy">2 - Inicialização</a>
+   <ul>
+      <li><a href="21__boot.html" class="no-ch">2.1 - BOOT</a></li>
+      <li><a href="22__setup.html" class="no-ch">2.2 - SETUP</a></li>
+      <li><a href="23__teste.html" class="no-ch">2.3 - Teste</a></li>
+      <li><a href="24__modo_de_segurana.html" class="no-ch">2.4 - Modo de Segurança</a></li>
+      <li id="active"><a href="25__recuperar_o_boot.html" class="active no-ch">2.5 - Recuperar o Boot</a></li>
+   </ul>
+   </li>
+   <li><a href="3__outros_componentes.html" class="daddy">3 - Outros Componentes</a>
+   <ul class="other-section">
+      <li><a href="31__hard_disk.html" class="no-ch">3.1 - Hard Disk</a></li>
+      <li><a href="32__hard_disk_ssd.html" class="no-ch">3.2 - Hard Disk SSD</a></li>
+      <li><a href="33__bluetooth.html" class="no-ch">3.3 - Bluetooth</a></li>
+      <li><a href="34__hdmi.html" class="no-ch">3.4 - HDMI</a></li>
+   </ul>
+   </li>
+   <li><a href="4__sistemas_operacionais.html" class="daddy">4 - Sistemas Operacionais</a>
+   <ul class="other-section">
+      <li><a href="41__windows.html" class="no-ch">4.1 - Windows</a></li>
+      <li><a href="42__linux.html" class="no-ch">4.2 - Linux</a></li>
+      <li><a href="43__mac_osx.html" class="no-ch">4.3 - Mac Osx</a></li>
+   </ul>
+   </li>
+   <li><a href="5__processamento_de_dados.html" class="daddy">5 - Processamento de Dados</a>
+   <ul class="other-section">
+      <li><a href="51__o_que__dado.html" class="no-ch">5.1 - O que é Dado</a></li>
+      <li><a href="52__o_que__informao.html" class="no-ch">5.2 - O que é Informação</a></li>
+      <li><a href="53__o_que__conhecimento.html" class="no-ch">5.3 - O que é Conhecimento</a></li>
+      <li><a href="54__o_que__sabedoria.html" class="no-ch">5.4 - O que é Sabedoria</a></li>
+      <li><a href="55__pirmide_do_conhecimento.html" class="no-ch">5.5 - Pirâmide do Conhecimento</a></li>
+   </ul>
+   </li>
+   <li><a href="6__arquiteturas.html" class="daddy">6 - Arquiteturas</a>
+   <ul class="other-section">
+      <li><a href="61__arquitetura_de_hardware.html" class="no-ch">6.1 - Arquitetura de Hardware</a></li>
+      <li><a href="62__arquitetura_de_software.html" class="no-ch">6.2 - Arquitetura de Software</a></li>
+      <li><a href="63__arquiteturas_x86_e_x64.html" class="no-ch">6.3 - Arquiteturas x86 e x64</a></li>
+   </ul>
+   </li>
+   <li><a href="7__rede_de_computadores.html" class="daddy">7 - Rede de Computadores</a>
+   <ul class="other-section">
+      <li><a href="71__modem.html" class="no-ch">7.1 - MODEM</a></li>
+      <li><a href="72__redes_neurais.html" class="no-ch">7.2 - Redes Neurais</a></li>
+   </ul>
+   </li>
+   <li><a href="8__iterao_homem_computador.html" class="daddy">8 - Iteração Homem Computador</a>
+   <ul class="other-section">
+      <li><a href="81__ergonomia.html" class="no-ch">8.1 - Ergonomia</a></li>
+      <li><a href="82__engenharia_cognitiva_e_semitica.html" class="no-ch">8.2 - Engenharia Cognitiva e Semiótica</a></li>
+   </ul>
+   </li>
+   <li><a href="9__formatao_os.html" class="daddy">9 - Formatação OS</a>
+   <ul class="other-section">
+      <li><a href="91__windows_format_e_configurao.html" class="no-ch">9.1 - Windows: Format e Configuração</a></li>
+      <li><a href="92__linux_instalao_ubuntu.html" class="no-ch">9.2 - Linux: Instalação Ubuntu</a></li>
+      <li><a href="93__mac_os_x_instalao.html" class="no-ch">9.3 - Mac OS x: Instalação</a></li>
+   </ul>
+   </li>
+   <li><a href="10__criar_pendrive_de_boot.html" class="daddy">10 - Criar Pendrive de Boot</a>
+   <ul class="other-section">
+      <li><a href="101_ccleaner_bootavel.html" class="no-ch">10.1 CCleaner Bootavel</a></li>
+   </ul>
+   </li>
+   <li><a href="11__excel_bsico.html" class="daddy">11 - Excel básico</a>
+   <ul class="other-section">
+      <li><a href="111__aula_1_excel_2013_bsico.html" class="no-ch">11.1 - Aula 1 Excel 2013 básico</a></li>
+      <li><a href="112__aula_2_excel_2013_bsico.html" class="no-ch">11.2 - Aula 2 Excel 2013 básico</a></li>
+   </ul>
+   </li>
+   <li><a href="12__tica_no_trabalho.html" class="daddy">12 - Ética no trabalho</a>
+   <ul class="other-section">
+      <li><a href="121__o_que__tica.html" class="no-ch">12.1 - O que é Ética</a></li>
+      <li><a href="122__o_que__moral.html" class="no-ch">12.2 - O que é moral</a></li>
+      <li><a href="123__o_que__antietico.html" class="no-ch">12.3 - O que é antietico</a></li>
+      <li><a href="124__tica_profissional.html" class="no-ch">12.4 - Ética profissional</a></li>
+   </ul>
+   </li>
+   <li><a href="13__empreendedorismo_na_informtica.html" class="daddy">13 - Empreendedorismo na informática</a>
+   <ul class="other-section">
+      <li><a href="131__4_caminhos_para_empreender_ti.html" class="no-ch">13.1 - 4 Caminhos para empreender T.I</a></li>
+      <li><a href="132__empreendedor_tem_que_est_atualizado.html" class="no-ch">13.2 - Empreendedor tem que está atualizado</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="24__modo_de_segurana.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3__outros_componentes.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.5 - Recuperar o Boot</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id62">
+<div class="iDevice emphasis0">
+<div id="ta62_85" class="block iDevice_content">
+<form action="http://www.hardware.com.br/comunidade/inline-mod/post/switch" method="post" class="InlineModForm section" data-cookiename="posts" data-controls="#InlineModControls" data-imodoptions="#ModerationSelect option">
+<p><span style="font-size: 1em;"></span></p>
+<p><span style="font-size: 1em;">Como recuperar o boot (MBR) do Windows 7 Quando um sistema operacional é instalado após o Windows, o novo sistema pode sobrescrever os arquivos de inicialização do SO da Microsoft.</span><br /><br /><span style="font-size: 1em;">Distribuições Linux, por exemplo, podem instalar o GRUB na MBR, para que seja possível um dual boot entre o Windows e o Linux, considerando que o gerenciador de boot padrão do Windows não suporta outros sistemas operacionais sem o uso de gambiarras.</span><br /><br /><br /><span style="font-size: 1em;">Mas, e se eu quiser</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">remover o Linux do computador</b><span style="font-size: 1em;">? A operação seria fácil: utiliza-se um editor de partições, como o</span><span style="font-size: 1em;"> </span><a href="http://www.guiadopc.com.br/noticias/13034/easeus-partition-master-professional-gratis.html" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;">EASEUS Partition Master</a><span style="font-size: 1em;">, o conhecido Partition Magic ou o próprio editor do Windows, e então basta deletar as partições do Linux. O problema vem quando você tenta iniciar o Windows novamente. A máquina simplesmente não vai bootar, acusando um “</span><b style="font-size: 1em;">GRUB loading error</b><span style="font-size: 1em;">”.</span><br /><br /><br /><span style="font-size: 1em;">Na época do Windows XP, era relativamente fácil recuperar o boot: inicie o CD de instalação, tecle R para entrar no console de recuperação, selecione a instalação do Windows que deseja recuperar e rode</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">fixboot</b><span style="font-size: 1em;"> </span><span style="font-size: 1em;">e</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">fixmbr</b><span style="font-size: 1em;">. Mas, no caso do Windows 7, esses dois “comandos mágicos” não funcionam mais. A Microsoft resolveu colocar, no DVD de instalação do Windows 7, um utilitário de “Correção de inicialização”, que nem sempre funcionará (e, dessa vez, não funcionou na minha máquina). Quando ele não funcionar, o que fazer? Simples! Aqui vai um passo a passo detalhado de como recuperar a inicialização do Windows 7:</span><br /><br /><br /><span style="font-size: 1em;">1. Inicie o DVD de instalação do Windows 7, selecione o idioma, formato de hora e layout de teclado de acordo com suas preferências:</span><br /><a href="http://www.guiadopc.com.br/wp-content/uploads/2010/01/IMG_0473.jpg" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;"><img src="http://e.cdn-hardware.com.br/static/c/m/5ee44025c4378b41312d496896d43ee9" class="bbCodeImage LbImage" alt="[​IMG]" data-url="http://e.cdn-hardware.com.br/static/c/m/5ee44025c4378b41312d496896d43ee9" /></a><br /><br /><br /><span style="font-size: 1em;">2. Na próxima tela, clique na opção</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">Reparar o computador</b><span style="font-size: 1em;">:</span><br /><a href="http://www.guiadopc.com.br/wp-content/uploads/2010/01/IMG_0474.jpg" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;"><img src="http://e.cdn-hardware.com.br/static/c/m/37788fe0ca47e926aa9ba1557de68069" class="bbCodeImage LbImage" alt="[​IMG]" data-url="http://e.cdn-hardware.com.br/static/c/m/37788fe0ca47e926aa9ba1557de68069" /></a><br /><br /><br /><span style="font-size: 1em;">3. O assistente de recuperação buscará por instalações existentes do Windows 7. Depois de concluída a busca, selecione a instalação desejada e clique em</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">Avançar</b><span style="font-size: 1em;">:</span><br /><a href="http://www.guiadopc.com.br/wp-content/uploads/2010/01/IMG_0475.jpg" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;"><img src="http://e.cdn-hardware.com.br/static/c/m/7b8142b345ecd9d1218e6bf0fbd4b9b2" class="bbCodeImage LbImage" alt="[​IMG]" data-url="http://e.cdn-hardware.com.br/static/c/m/7b8142b345ecd9d1218e6bf0fbd4b9b2" /></a><br /><a href="http://www.guiadopc.com.br/wp-content/uploads/2010/01/IMG_0476.jpg" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;"><img src="http://e.cdn-hardware.com.br/static/c/m/e66aefbbc6c816898d458687bfdf265c" class="bbCodeImage LbImage" alt="[​IMG]" data-url="http://e.cdn-hardware.com.br/static/c/m/e66aefbbc6c816898d458687bfdf265c" /></a><br /><br /><br /><span style="font-size: 1em;">4. Clique em</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">Prompt de comando</b><span style="font-size: 1em;">. Uma janela será aberta:</span><br /><a href="http://www.guiadopc.com.br/wp-content/uploads/2010/01/IMG_0477.jpg" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;"><img src="http://e.cdn-hardware.com.br/static/c/m/59d63e3e4819dfe17d108e6affa8f176" class="bbCodeImage LbImage" alt="[​IMG]" data-url="http://e.cdn-hardware.com.br/static/c/m/59d63e3e4819dfe17d108e6affa8f176" /></a><br /><br /><br /><span style="font-size: 1em;">5. Digite o comando</span><span style="font-size: 1em;"> </span><b style="font-size: 1em;">bootsect /nt60 ALL /force /mbr</b><span style="font-size: 1em;"> </span><span style="font-size: 1em;">e dê Enter. Espere o Windows processar tudo. Depois, basta fechar a janela e reiniciar o micro. Pronto! O programa bootsect.exe forçará (</span><i style="font-size: 1em;">/force</i><span style="font-size: 1em;">) uma sobrescrita do MBR (</span><i style="font-size: 1em;">/mbr</i><span style="font-size: 1em;">) de todas as partições (</span><i style="font-size: 1em;">ALL</i><span style="font-size: 1em;">) com um código compatível com o Windows 7 (</span><i style="font-size: 1em;">/nt60</i><span style="font-size: 1em;">).</span><br /><a href="http://www.guiadopc.com.br/wp-content/uploads/2010/01/IMG_0482.jpg" target="_blank" class="externalLink" rel="nofollow noopener noreferrer" style="font-size: 1em;"><img src="http://e.cdn-hardware.com.br/static/c/m/18036fd10b7622bad64754844b0d1531" class="bbCodeImage LbImage" alt="[​IMG]" data-url="http://e.cdn-hardware.com.br/static/c/m/18036fd10b7622bad64754844b0d1531" /></a></p>
+<div class="a_message_inline a_local" style="display: inline !important;">
+<div style="display: inline !important;">
+<div></div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licença Creative Commons Atribuição Compartilha Igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="24__modo_de_segurana.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3__outros_componentes.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
